@@ -29,6 +29,53 @@
     <!-- ==========================  HEADER  ======================== -->
     <header class="header" id="header">
 
+        <!-- header top -->
+        <div class="header_top">
+            <div class="contact_details">
+                <a href="tel.0000000000" class="contact_number" >+91 892 023 2445</a>
+                <a href="mailto:info@gmail.com" class="contact_email">info@gmail.com</a>
+            </div>
+            <ul class="header_social_links">
+                <li><a href="#"><i class="bx bxl-facebook" title="facebook"></i></a></li>
+                <li><a href="#"><i class="bx bxl-instagram" title="instagram"></i></a></li>
+                <li><a href="#"><i class="bx bxl-pinterest-alt" title="pinterest"></i></a></li>
+                <li><a href="#"><i class="bx bxl-twitter" title="twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- navbar -->
+        <div id="nav_wrapper" class="nav_wrapper">
+            <div class="nav">
+                <a href="#" class="nav_logo">Travelo</a>
+
+                <!-- nav menu -->
+                <div id="nav_menu" class="nav_menu">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                        <li class="nav_item"><a href="#destinations" class="nav_link">Destinations</a></li>
+                        <li class="nav_item"><a href="#tours" class="nav_link">Tour</a></li>
+                        <li class="nav_item"><a href="#gallary" class="nav_link">Gallery</a></li>
+                        <li class="nav_item"><a href="#blogs" class="nav_link">Blogs</a></li>
+                    </ul>
+
+                    <!-- nav close -->
+                    <div id="nav_close" class="nav_close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <!-- search icon -->
+                <div id="nav_search" class="nav_search">
+                    <i class="bx bx-search"></i>
+                </div>
+
+                <!-- nav toggle -->
+                <div id="nav_toggle" class="nav_toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <!-- ========================  HEADER END  ===================== -->
@@ -73,7 +120,7 @@
                         <div>
                             <button class="btn btn-1">Want a personal tour</button>
                             <button class="btn btn-2 light">Choose tour</button>
-                            <button title="button" class="carousel_next_btn carousel_btn light" ><i class="fa-solid fa-arrow-right"></i></button>
+                            <button title="button" class="carousel_next_btn carousel_btn light" data-target="#home-carousel"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
@@ -89,7 +136,7 @@
                         <div>
                             <button class="btn btn-1">Want a personal tour</button>
                             <button class="btn btn-2 light">Choose tour</button>
-                            <button title="button" class="carousel_next_btn carousel_btn light" ><i class="fa-solid fa-arrow-right"></i></button>
+                            <button title="button" class="carousel_next_btn carousel_btn light" data-target="#home-carousel"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
@@ -110,7 +157,158 @@
 
     <!-- ========================  DESTINATIONS  ======================== -->
     <section id="destinations" class="section_padding">
+        <div class="wrapper">
 
+            <!-- section top -->
+            <div class="section_top">
+                <div class="section_heading">
+                    <p class="section_subtitle">Popularity</p>
+                    <h2 class="section_title light">Most Popular <br>holiday destinations</h2>
+                </div>
+
+                <div class="button_wrapper">
+                    <div class="carousel_buttons">
+                        <div class="carousel_prev_btn carousel_btn light" data-target="#destination-carousel">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="carousel_next_btn carousel_btn light" data-target="#destination-carousel">
+                            <i class="fa-solid fa-arrow-right ss"></i>
+                        </div>
+                    </div>
+                    <button class="btn btn-2 light">View all tours</button>
+                </div>
+            </div>
+
+            <div id="destination-carousel" class="destination-carousel owl-carousel owl-theme">
+
+                <!-- slide 1 -->
+                <div class="destination_slide">
+                    <div class="overlay"></div>
+                    <img src="Images/dest-1.jpg" alt="dest-img-1">
+                    <div class="tag_list">
+                        <div class="tags discount">20% off</div>
+                        <div class="tags new">new</div>
+                    </div>
+                    <div class="content">
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star inactive"></i>
+                            <span>(2 Reviews)</span>
+                        </div>
+                        <h3 class="title">Autumn in Japan | $3,500 $3,880</h3>
+                        <p class="description">6 excursions to the main cities of the country, admire the beautiful autumn gardens</p>
+                        <div class="time">
+                            <i class="fa-regular fa-clock clock"></i>
+                            <span class="days">7 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- slide 2 -->
+                <div class="destination_slide">
+                    <div class="overlay"></div>
+                    <img src="Images/dest-2.jpg" alt="dest-img-2">
+                    <div class="tag_list">
+                        <div class="tags discount">20% off</div>
+                    </div>
+                    <div class="content">
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star inactive"></i>
+                            <span>(2 Reviews)</span>
+                        </div>
+                        <h3 class="title">A tour of the Islands</h3>
+                        <p class="description">6 excursions to the main cities of the country, admire the beautiful autumn gardens</p>
+                        <div class="time">
+                            <i class="fa-regular fa-clock clock"></i>
+                            <span class="days">7 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- slide 3 -->
+                <div class="destination_slide">
+                    <div class="overlay"></div>
+                    <img src="Images/dest-3.jpg" alt="dest-img-3">
+                    <div class="tag_list">
+                        <div class="tags discount">20% off</div>
+                    </div>
+                    <div class="content">
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star inactive"></i>
+                            <span>(2 Reviews)</span>
+                        </div>
+                        <h3 class="title">Seychelles | $3,500 $3,880</h3>
+                        <p class="description">6 excursions to the main cities of the country, admire the beautiful autumn gardens</p>
+                        <div class="time">
+                            <i class="fa-regular fa-clock clock"></i>
+                            <span class="days">7 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- slide 4 -->
+                <div class="destination_slide">
+                    <div class="overlay"></div>
+                    <img src="Images/dest-4.jpg" alt="dest-img-4">
+                    <div class="tag_list"></div>
+                    <div class="content">
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star inactive"></i>
+                            <span>(2 Reviews)</span>
+                        </div>
+                        <h3 class="title">Autumn in Japan | $3,500 $3,880</h3>
+                        <p class="description">6 excursions to the main cities of the country, admire the beautiful autumn gardens</p>
+                        <div class="time">
+                            <i class="fa-regular fa-clock clock"></i>
+                            <span class="days">7 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- slide 5 -->
+                <div class="destination_slide">
+                    <div class="overlay"></div>
+                    <img src="Images/dest-5.jpg" alt="dest-img-5">
+                    <div class="tag_list">
+                        <div class="tags new">new</div>
+                    </div>
+                    <div class="content">
+                        <div class="rating">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star inactive"></i>
+                            <span>(2 Reviews)</span>
+                        </div>
+                        <h3 class="title">A tour of the Islands</h3>
+                        <p class="description">6 excursions to the main cities of the country, admire the beautiful autumn gardens</p>
+                        <div class="time">
+                            <i class="fa-regular fa-clock clock"></i>
+                            <span class="days">7 days</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
     </section>
 
 

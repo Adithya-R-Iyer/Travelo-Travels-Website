@@ -87,3 +87,6 @@ MORE INFO
 
 Copyright ©2022 All rights reserved
 Made by WebIdeas
+
+*********  PENDING WORK  ***********
+1. Search Bar (Nav Search)
