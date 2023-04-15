@@ -572,3 +572,95 @@ html {
     color: rgba(255, 255, 255, 0.65);
     font-size: 15px;
 }
+
+
+/* ********************  Search Tours  ****************** */
+
+.search_tour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--black-color) 50%, #f7f7f7 50%);
+}
+
+.search_tour_wrapper {
+    width: 100%;
+    padding: 50px 15px;
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 60px 0px rgb(0 0 0 / 16% );
+}
+
+.search_tour_wrapper .section_heading {
+    margin-bottom: 40px;
+}
+
+.search_tour_wrapper .section_title {
+    max-width: 520px;
+}
+
+.fields {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.field_item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.field_label {
+    color: var(--label-color);
+    font-weight: var(--font-bold);
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.field_input, .field_select {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    border: 2px solid #E6E6E6;
+    height: 62px;
+    border-radius: var(--radius-14);
+}
+
+.field_input input, .field_select select {
+    padding: 0 10px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.field_select select {
+    margin-right: 10px;
+}
+
+.field_input input::placeholder {
+    color: var(--black-color);
+}
+
+.field_input i {
+    font-size: 20px;
+    padding-right: 10px;
+    color: var(--black-color);
+}
+
+input:focus, select:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.fields .btn-1 {
+    border-radius: var(--radius-full);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 34px;
+    margin-top: 20px;
+    padding: 15px;
+}
