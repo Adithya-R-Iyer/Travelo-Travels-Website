@@ -40,6 +40,20 @@ window.onscroll = function() {
     prevScrollpos=currentScrollpos;
 }
 
+// code to close nav menu when clicked on a link within
+const navLink = document.querySelectorAll('.nav_link');
+
+navLink.forEach(link =>{
+    link.addEventListener('click', ()=> {
+        const navMenu = document.getElementById('nav_menu');
+        navMenu.querySelector('.active').classList.remove('active');
+        link.classList.add('active');
+
+        // close menu when clicked on a link
+        navMenu.classList.remove('show_menu');
+    })
+})
+
 
 // Home Carousel
 $('.home-carousel').owlCarousel({   //used to create responsive carousel sliders... its an enabled jquery plugin
@@ -92,27 +106,47 @@ $('.destination-carousel').owlCarousel({   //used to create responsive carousel 
     Loop:true,
     margin:35,
     dots:false,
-    smartSpeed:700,
-    // autoplay:true,
-    // autoplayTimeout: 8000,
+    stagePadding: 75,
+    smartSpeed:500,
+    autoplay:true,
+    autoplayTimeout: 8000,
     responsive: {
         0: {
-            items:1
+            items:1,
+            stagePadding:0
+        },
+        1000: {
+            items: 1.2
+        },
+        1080: {
+            items: 1.61
         }
     }
 })
 
-// Destination Carousel
+// Tour Carousel
 $('.tour-carousel').owlCarousel({   //used to create responsive carousel sliders... its an enabled jquery plugin
     Loop:true,
     margin:35,
     dots:false,
-    smartSpeed:700,
-    // autoplay:true,
-    // autoplayTimeout: 8000,
+    stagePadding:75,
+    smartSpeed:500,
+    autoplay:true,
+    autoplayTimeout: 8000,
     responsive: {
         0: {
-            items:1
+            items:1,
+            stagePadding:0
+        },
+        700: {
+            items:2,
+            stagePadding:0
+        },
+        1000: {
+            items:2.5
+        },
+        1080: {
+            items:3
         }
     }
 })
