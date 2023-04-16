@@ -47,8 +47,8 @@ $('.home-carousel').owlCarousel({   //used to create responsive carousel sliders
     margin:0,
     dots:false,
     smartSpeed:700,
-    // autoplay:true,
-    // autoplayTimeout: 8000,
+    autoplay:true,
+    autoplayTimeout: 8000,
     responsive: {
         0: {
             items:1
@@ -89,6 +89,21 @@ wrapper.forEach(option => {
 
 // Destination Carousel
 $('.destination-carousel').owlCarousel({   //used to create responsive carousel sliders... its an enabled jquery plugin
+    Loop:true,
+    margin:35,
+    dots:false,
+    smartSpeed:700,
+    // autoplay:true,
+    // autoplayTimeout: 8000,
+    responsive: {
+        0: {
+            items:1
+        }
+    }
+})
+
+// Destination Carousel
+$('.tour-carousel').owlCarousel({   //used to create responsive carousel sliders... its an enabled jquery plugin
     Loop:true,
     margin:35,
     dots:false,
