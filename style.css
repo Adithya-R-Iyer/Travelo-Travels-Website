@@ -786,6 +786,8 @@ input:focus, select:focus-visible {
     font-size: 15px;
 }
 
+/* ************** gallary css ***************************** */
+
 #gallary {
     background-image: url(Images/gallery-bg.jpg);
     background-position: fixed;
